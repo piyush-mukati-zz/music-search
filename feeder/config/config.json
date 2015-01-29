@@ -1,0 +1,7 @@
+{
+  "hostname":"localhost",
+  "port":"9200",
+  "index": "imp_index",
+  "docType": "tmp_doctype",
+  "srcDir" : "/"
+}

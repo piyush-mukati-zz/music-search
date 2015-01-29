@@ -1,0 +1,20 @@
+
+<div >
+  <audio  id="player" src={{model.curSong}} controls="controls" autoplay="autoplay">
+
+</div>
+<div class="jumbotron">
+  <p class="lead">
+    <input type="text" placeholder="search" ng-model="model.keyword" ng-change='model.search()'></input>
+      </p>
+</div>
+
+<div ng-repeat="i in results">
+<a  ng-click='model.play(i._source.source)' >
+{{i._source.filename}}
+</a>
+<!--audio controls id="player">
+  <source src="{{i._source.source}}">
+  </audio-->
+
+</div>
